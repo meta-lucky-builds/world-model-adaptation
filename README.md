@@ -159,6 +159,13 @@ The recorded pixel run is commit `83be5d1`, run `41841227508`. Experiment code u
 | [`results/`](results) | Raw results for every scored run |
 | [`tests/`](tests) | Test suite, run by CI |
 
+## Related work
+
+- That lower prediction error need not mean better control is a known effect: [Objective Mismatch in Model-based Reinforcement Learning](https://arxiv.org/abs/2002.04523) (Lambert et al., 2020). Finding 3 is a new instance of it, under test-time adaptation from pixels.
+- Two recent papers report the same gap in JEPA world models: [One-Step Prediction Fidelity Is a Poor Proxy for Planning Performance](https://arxiv.org/abs/2610.19375) (14 Oct 2026) and [Adapt for Planning, Not just Prediction](https://arxiv.org/abs/2610.35636) (Mete et al., 26 Oct 2026).
+
+I found no earlier comparison of latent and RLS adaptation by shift familiarity, or of that crossover from state against pixels.
+
 ## Open questions
 
 1. Why does the latent lower prediction error but not raise control success from pixels? This is the most useful next step, because prediction scores are a common way to judge world models.
