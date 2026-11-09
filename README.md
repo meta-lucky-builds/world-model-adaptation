@@ -143,7 +143,7 @@ bash scripts/gpu_run.sh --smoke
 
 The smoke run takes minutes on a CPU, and its numbers mean nothing. For the real pixel run, start the [`pixel-pendulum`](.github/workflows/pixel-pendulum.yml) workflow from the Actions tab (about 80 minutes on free runners), or follow [GPU_RUN.md](docs/GPU_RUN.md). Runs are seeded, and source hashes and package versions are stored with every result. Reruns on cloud CPU matched on pendulum and drone. Puck's closed-loop figure moved between reruns (0.075 vs 0.175 on one seed), and reproducibility on a GPU is untested.
 
-The recorded pixel run is commit `83be5d1`, run `41841227508`. Experiment code under `src/` and `experiments/` is unchanged since then.
+The recorded pixel run is commit `83be5d1`, run `41841227508`. Experiment code under [`src/`](src/) and [`experiments/`](experiments/) is unchanged since then.
 
 ## Repo map
 
